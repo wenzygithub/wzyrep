@@ -1,78 +1,32 @@
-<!doctype html>
-<html>
-<head>
-<title>文贞耀的个人主页</title>
-<link href="style.css" rel="stylesheet"  type="text/css" />
+<?php
+/**
+ * Z-Blog with PHP
+ * @author
+ * @copyright (C) RainbowSoft Studio
+ * @version
+ */
+
+require 'zb_system/function/c_system_base.php';
+
+$zbp->CheckGzip();
+$zbp->Load();
+$zbp->CheckSiteClosed();
+
+$action = 'feed';
+
+foreach ($GLOBALS['hooks']['Filter_Plugin_Feed_Begin'] as $fpname => &$fpsignal) {
+    $fpname();
+}
+
+ViewIndex();
+
+foreach ($GLOBALS['hooks']['Filter_Plugin_Feed_End'] as $fpname => &$fpsignal) {
+    $fpname();
+}
+
+RunTime();
 
 
-<meta charset="utf-8">
-</head>
-<body> 
-<header> 
-  <h1> 
-        文贞耀  <span class="orange"> 的BLOG </span>
-  </h1>
-</header>
-
-
-<nav>
-      <ul>
-        <li><a href="index.html" class="selected">博客首页 </a> </li>
-        <li><a href="index1.html">关于我 </a></li>
-        <li><a href="index2.html">给我留言 </a></li>
-        <li><a href="index3.html">友情链接 </a></li>
-        <li><a href="index4.html">我的信箱 </a></li>
-        <li><a href="index5.html">社区 </a></li>
-      </ul>
-</nav> 
-
-
-
-
-<div id="content">
-    <section>
-        <h1>日记</h1>
-        <p> blabla
-      </p>
-      
-        <p> blablabala...
-      </p>
-      
-    </section>
-
-
-    <aside>
-        <ul>
-            <li><a href="index1.html" class="selected">日志 </a> </li>
-            <li><a href="index1.html">相册 </a></li>
-            <li><a href="index1.html">个人档案 </a></li>
-            <li><a href="index1.html">分享 </a></li>
-            <li><a href="index1.html">音乐地带 </a></li>
-            <li><a href="index1.html">视频 </a></li>
-            <li><a href="index1.html">更多 </a></li>
-        </ul>
-    </aside> 
-</div>
-
-
-
-
-
-
-<footer>
-        <p>版权文贞耀所有</p>
-        <hr />
-        <small>法律条文</small>
-        <small>联系我们</small>
-        <small>客户意见</small>
-        <small>商户合作</small>
-</footer>
-
-
-</body>
-
-
-</html>
  
  
  
