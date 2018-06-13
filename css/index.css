@@ -1,4 +1,4 @@
- @charset "gb2312";
+@charset "gb2312";
 .picsbox { width: 100%; overflow: hidden; position: relative; }
 /*banner*/
 .banner { width: 66%; overflow: hidden; float: left }
