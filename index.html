@@ -8,28 +8,47 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <body>
     <form action="validate.jsp" method="post">
-    <table>
-        <tr>
-            <td>用户名：</td>
-            <td><input type="text" name="loginName"></td>
-            <td><font color="red">
-               </font></td>
-        </tr>
-        <tr>
-            <td> 密码：</td>
-            <td><input type="password" name="loginPass"></td>
-            <td><font color="red">
-               </font></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="提交"></td>
-            <td><input type="reset" value="重置"></td>
-        </tr>
-     </table>
-    </form>
-</body>
+    <div class="htmleaf-container">
+	<div class="wrapper">
+		<div class="container">
+			<h1>Welcome</h1>
+			
+			<form class="form">
+				<input type="text" placeholder="loginName">
+				<input type="password" placeholder="loginPass">
+				<button type="submit" id="login-button">Login</button>
+			</form>
+		</div>
+		
+		<ul class="bg-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+</div>
 
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script>
+$('#login-button').click(function (event) {
+	event.preventDefault();
+	$('form').fadeOut(500);
+	$('.wrapper').addClass('form-success');
+	window.location.href='wenzy.html';
+});
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#000000">
+<h1>wenzy博客</h1>
+</div>
+</body>
 
 </html>
