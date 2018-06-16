@@ -1,152 +1,94 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="gbk">
-<title>模板分享_杨青个人博客 - 一个站在web前端设计之路的女技术员个人博客网站</title>
-<meta name="keywords" content="个人博客,杨青个人博客,个人博客模板,杨青" />
-<meta name="description" content="杨青个人博客，是一个站在web前端设计之路的女程序员个人网站，提供个人博客模板免费资源下载的个人原创网站。" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/base.css" rel="stylesheet">
-<link href="css/index.css" rel="stylesheet">
-<link href="css/m.css" rel="stylesheet">
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/jquery.easyfader.min.js"></script>
-<script src="js/scrollReveal.js"></script>
-<script src="js/common.js"></script>
-<!--[if lt IE 9]>
-<script src="js/modernizr.js"></script>
-<![endif]-->
+    <meta charset="UTF-8">
+    <title>Github Comments | gc.js</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<style>
+body { font:14px/1.5 Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif } .info { padding: 12px 24px 12px 30px; margin: 2em 0 2em 10px; border-left: 4px solid #fac769; background-color: #f9f9f9; position: relative; border-top-left-radius: 0; border-top-right-radius: 0; } .info:before { position: absolute; top: 50%; margin-top: -17px; left: -17px; background-color: #fac769; color: #fff; content: "i"; width: 30px; height: 30px; border-radius: 100%; text-align: center; line-height: 30px; font-weight: 700; font-family: Georgia; } #top { position: fixed; right: 10px; bottom: 10px; width:25px; height:25px; text-align: center; line-height: 25px; background-color: #999; border-radius: 3px; color: white; font-size:12px; cursor:pointer; display: none; }
+</style>
 </head>
 <body>
-<header> 
-  <!--menu begin-->
-  <div class="menu">
-    <nav class="nav" id="topnav">
-      <h1 class="logo"><a href="http://www.yangqq.com">杨青博客</a></h1>
-      <li><a href="index.html">网站首页</a> </li>
-      <li><a href="about.html">关于我</a> </li>
-      <li><a href="share.html">模板分享</a>
-        <ul class="sub-nav">
-          <li><a href="share.html">个人博客模板</a></li>
-          <li><a href="share.html">国外Html5模板</a></li>
-          <li><a href="share.html">企业网站模板</a></li>
-        </ul>
-      </li>
-      <li><a href="list.html">学无止境</a>
-        <ul class="sub-nav">
-          <li><a href="list.html">心得笔记</a></li>
-          <li><a href="list.html">CSS3|Html5</a></li>
-          <li><a href="list.html">网站建设</a></li>
-          <li><a href="list.html">推荐工具</a></li>
-          <li><a href="list.html">JS实例索引</a></li>
-        </ul>
-      </li>
-      <li><a href="life.html">慢生活</a>
-        <ul class="sub-nav">
-          <li><a href="life.html">日记</a></li>
-          <li><a href="life.html">欣赏</a></li>
-          <li><a href="life.html">程序人生</a></li>
-          <li><a href="life.html">经典语录</a></li>
-        </ul>
-      </li>
-      <li><a href="time.html">时间轴</a> </li>
-      <li><a href="gbook.html">留言</a> </li>
-      <li><a href="info.html">内容页</a> </li>
-      <!--search begin-->
-      <div id="search_bar" class="search_bar">
-        <form  id="searchform" action="[!--news.url--]e/search/index.php" method="post" name="searchform">
-          <input class="input" placeholder="想搜点什么呢..." type="text" name="keyboard" id="keyboard">
-          <input type="hidden" name="show" value="title" />
-          <input type="hidden" name="tempid" value="1" />
-          <input type="hidden" name="tbname" value="news">
-          <input type="hidden" name="Submit" value="搜索" />
-          <span class="search_ico"></span>
-        </form>
-      </div>
-      <!--search end--> 
-    </nav>
-  </div>
-  <!--menu end--> 
-  <!--mnav begin-->
-  <div id="mnav">
-    <h2><a href="http://www.yangqq.com" class="mlogo">杨青博客</a><span class="navicon"></span></h2>
-    <dl class="list_dl">
-      <dt class="list_dt"> <a href="index.html">网站首页</a> </dt>
-      <dt class="list_dt"> <a href="about.html">关于我</a> </dt>
-      <dt class="list_dt"> <a href="#">模板分享</a> </dt>
-      <dd class="list_dd">
-        <ul>
-          <li><a href="share.html">个人博客模板</a></li>
-          <li><a href="share.html">国外Html5模板</a></li>
-          <li><a href="share.html">企业网站模板</a></li>
-        </ul>
-      </dd>
-      <dt class="list_dt"> <a href="#">学无止境</a> </dt>
-      <dd class="list_dd">
-        <ul>
-          <li><a href="list.html">心得笔记</a></li>
-          <li><a href="list.html">CSS3|Html5</a></li>
-          <li><a href="list.html">网站建设</a></li>
-          <li><a href="list.html">推荐工具</a></li>
-          <li><a href="list.html">JS实例索引</a></li>
-        </ul>
-      </dd>
-      <dt class="list_dt"> <a href="#">慢生活</a> </dt>
-      <dd class="list_dd">
-        <ul>
-          <li><a href="life.html">日记</a></li>
-          <li><a href="life.html">欣赏</a></li>
-          <li><a href="life.html">程序人生</a></li>
-          <li><a href="life.html">经典语录</a></li>
-        </ul>
-      </dd>
-      <dt class="list_dt"> <a href="time.html">时间轴</a> </dt>
-      <dt class="list_dt"> <a href="gbook.html">留言</a> </dt>
-    </dl>
-  </div>
-  <!--mnav end--> 
-</header>
-<div class="pagebg sh"></div>
-<div class="container">
-  <h1 class="t_nav"><span>好咖啡要和朋友一起品尝，好“模板”也要和同样喜欢它的人一起分享。 </span><a href="/" class="n1">网站首页</a><a href="/" class="n2">模板分享</a></h1>
+<h1>Github 鐣欒█绯荤粺</h1>
+<p class="info" >
+璁╄瘎璁鸿川閲忔洿楂橈紝璁╃綉绔欎笌 Github 鍏宠仈<br>
+閫傚悎绋嬪簭鍛樼殑璇勮绯荤粺锛屽熀浜� Github issues 鐣欒█
+</p>
+<pre style="padding: 16px;  font-size: 85%; line-height: 1.45; background-color: #f7f7f7; border-radius: 3px;overflow:scroll;" >
+&lt;style&gt;.gc-comments {font:12px/1.5 Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}&lt;/style&gt;
+&lt;script src="https://unpkg.com/github-comments/gc.js"&gt;&lt;/script&gt;
+&lt;div class="gc-comments" <strong style="color:#1D7FB9;" >data-repos="nimojs/github-comments"</strong> <strong style="color:#1D7FB9;" >data-issues="1"</strong> &gt;
+    &lt;div class="gc-comments-title"&gt;
+        璇勮
+    &lt;/div&gt;
+    &lt;div class="gc-comments-info"&gt;
+        鎯冲湪姝ょ暀涓嬭瘎璁猴紝璇疯闂� &lt;a target="_blank" href="<strong style="color:#1D7FB9;" >issues_link</strong>"&gt;<strong style="color:#1D7FB9;" >issues_link</strong>&lt;/a&gt; 鎻愪氦璇勮
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p class="code-desc" >
+    <code>data-repos="<strong style="color:#1D7FB9;" >nimojs/github-comments</strong>"</code><br />
+    <code>data-issues="<strong style="color:#1D7FB9;">1</strong>"</code><br />
+    <code><strong style="color:#1D7FB9;" >issues_link</strong></code> 浼氳嚜鍔ㄦ浛鎹㈡垚 <code>https://github.com/nimojs/github-comments/issues/1</code>
+</p>
+
+<form action="" id="MainForm">
+<label>
+    <strong>濉啓浣犵殑 repos 鍜� issues id 鐢熸垚璇勮鍒楄〃</strong>
+    <br>
+    repos:
+    <input type="text" id="Repos" placeholder="user/repo" value="fouber/blog" >
+</label>
+<label>
+    issues:
+    <input type="number" id="Issues" value="1">
+</label>
+<button type="submit">Create</button>
+</form>
+<br />
+<div id="Load"></div>
 
 
-<div class="share">
-<ul>
- <li> <div class="shareli"><a href="/" target="_blank"> <i><img src="images/toppic01.jpg"></i>
-      <h2><b>别让这些闹心的套路，毁了你的网页设计!</b></h2>
-      <span>喜欢 | 190</span> </a></div> </li>
- <li> <div class="shareli"><a href="/" target="_blank"> <i><img src="images/toppic02.jpg"></i>
-      <h2><b>陌上花开，可缓缓归矣</b></h2>
-      <span>喜欢 | 190</span> </a></div> </li>
- <li> <div class="shareli"><a href="/" target="_blank"> <i><img src="images/banner01.jpg"></i>
-      <h2><b>网页中图片属性固定宽度，如何用js改变大小</b></h2>
-      <span>喜欢 | 190</span> </a> </div> </li>
- <li> <div class="shareli"><a href="/" target="_blank"> <i><img src="images/text01.jpg"></i>
-      <h2><b>个人博客，属于我的小世界！</b></h2>
-      <span>喜欢 | 190</span> </a> </div> </li>
- <li> <div class="shareli"><a href="/" target="_blank"> <i><img src="images/text02.jpg"></i>
-      <h2><b>html5个人博客模板《黑色格调》</b></h2>
-      <span>喜欢 | 190</span> </a> </div> </li>
- <li> <div class="shareli"><a href="/" target="_blank"> <i><img src="images/banner02.jpg"></i>
-      <h2><b>帝国cms 首页或者列表无图，不使用默认图片的方法</b></h2>
-      <span>喜欢 | 190</span> </a> </div> </li>
-       <li> <div class="shareli"><a href="/" target="_blank"> <i><img src="images/text02.jpg"></i>
-      <h2><b>十条设计原则教你学会如何设计网页布局!</b></h2>
-      <span>喜欢 | 190</span> </a> </div> </li>
- <li> <div class="shareli"><a href="/" target="_blank"> <i><img src="images/banner02.jpg"></i>
-      <h2><b>html5个人博客模板主题《清雅》</b></h2>
-      <span>喜欢 | 190</span> </a> </div> </li>
-</ul>
+<style>.gc-comments {font:12px/1.5 Lantinghei SC,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif}</style>
+<script src="gc.js"></script>
+<div class="gc-comments" data-repos="nimojs/github-comments" data-issues="1" >
+    <div class="gc-comments-title">
+        璇勮
+    </div>
+    <div class="gc-comments-info">
+        鎯冲湪姝ょ暀涓嬭瘎璁猴紝璇疯闂� <a target="_blank" href="issues_link">issues_link</a> 鎻愪氦璇勮
+    </div>
 </div>
 
-<div class="pagelist"><a title="Total record">&nbsp;<b>45</b> </a>&nbsp;&nbsp;&nbsp;<b>1</b>&nbsp;<a href="/download/index_2.html">2</a>&nbsp;<a href="/download/index_2.html">下一页</a>&nbsp;<a href="/download/index_2.html">尾页</a></div>
+<div id="top">Top</div>
 
-
-</div>
-<footer>
-  <p>Design by <a href="http://www.yangqq.com" target="_blank">杨青个人博客</a> <a href="/">蜀ICP备11002373号-1</a></p>
-</footer>
-<a href="#" class="cd-top">Top</a>
+<script>
+gc.$(function ($) {
+    var $Repos = $('#Repos')
+    var $Issues = $('#Issues')
+    var $Load = $('#Load')
+    var $win = $(window)
+    var $Top = $('#top')
+    $('#MainForm').on('submit', function () {
+        var $this = $(this)
+        $Load.html('')
+        gc.load($Repos.val(), $Issues.val(), $Load)
+        return false
+    })
+    var $bodyhtml = $('body,html')
+    $Top.on('click', function () {
+        $bodyhtml.animate({scrollTop:0},10);
+    })
+    $win.scroll(function(){
+        if ($(window).scrollTop()>100){
+            $Top.stop(false,true).fadeIn(1500);
+        }
+        else
+        {
+            $Top.stop(false,true).fadeOut(1500);
+        }
+    });
+})
+</script>
 </body>
 </html>
