@@ -1,214 +1,95 @@
 <!DOCTYPE html>
-
 <html lang="zh-CN">
-
-    <head>
-
-        <meta charset="utf-8">
-
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>wenzy</title>   
-
-        <!-- Bootstrap -->
-
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-		<link href="css/style.css?ver=2" rel="stylesheet">   		
-
-		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
-
-        <!--[if lt IE 9]>
-
-			<script src="js/html5shiv.js"></script>
-
-			<script src="js/respond.min.js"></script>
-
-        <![endif]-->
-
-        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-
-        <script src="js/bootstrap.min.js"></script> 
-
-		<script type="text/javascript" src="js/main.js"></script>
-
-		
-
-    </head>
-
-    <body>
-
-		<!-- 上方导航栏 -->
-
-		<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
-
-			<div class="container">
-
-				<div class="navbar-header">
-
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-
-						<span class="sr-only">切换导航</span>
-
-						<span class="icon-bar"></span>
-
-						<span class="icon-bar"></span>
-
-						<span class="icon-bar"></span>
-
-					</button>
-
-					<a href="#ad-carousel" class="navbar-brand">崔庆才</a>
-
-			  </div>
-
-			  <!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
-
-			  <div class="collapse navbar-collapse navbar-responsive-collapse" id="collapse">
-
-					<ul class="nav navbar-nav">
-
-						<li class="active"><a href="#ad-carousel">主页面</a></li>
-
-						<li><a href="#ad-carousel">个人简介</a></li>
-
-						<li><a href="#tech-container">专业技能</a></li>
-
-						<li><a href="#project-container">项目经历</a></li>
-
-						<li><a href="#contact-me">与我联系</a></li>
-
-					</ul>
-
-			  </div>
-
-			</div>
-
-		</div>
-
-		<!-- 上方导航栏结束 -->  
-
-		
-
-		<!-- 轮播 -->
-
-		<div id="ad-carousel" class="carousel slide" data-ride="carousel">
-
-			<!--轮播下方点-->
-
-			<ol class="carousel-indicators">
-
-				<li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
-
-				<li data-target="#ad-carousel" data-slide-to="1"></li>
-
-				<li data-target="#ad-carousel" data-slide-to="2"></li>
-
-				<li data-target="#ad-carousel" data-slide-to="3"></li>
-
-			</ol>
-
-			<!-- 轮播图-->
-
-			<div class="carousel-inner">
-
-				<div class="item active">
-
-					<img src="images/1.png" alt="1 slide">
-
-
-
-					<div class="container">
-
-						<div class="carousel-caption">
-
-							<h2>个性</h2>
-
-
-
-							<p>我就是我，是颜色不一样的焰火</p>
-
-
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="item">
-
-					<img src="images/2.png" alt="2 slide">
-
-
-
-					<div class="container">
-
-						<div class="carousel-caption">
-
-							<h2>发现</h2>
-
-
-
-							<p>静静寻觅，只为探求生活的美好。</p>
-
-
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="item">
-
-					<img src="images/3.png" alt="3 slide">
-
-
-
-					<div class="container">
-
-						<div class="carousel-caption">
-
-							<h2>青春</h2>
-
-
-
-							<p>生命像鲜花一样绽开，我们不能让自己枯萎。</p>
-
-
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="item">
-
-					<img src="images/4.png" alt="4 slide">
-
-					
-
-					<div class="container">
-
-						<div class="carousel-caption">
-
-							<h2>追求</h2>
-
-
-
-							<p>我的未来不是梦，我认真地过每一分钟。</p>
-
-
-
-						</div>
-
-					</div>
-
-				</div>
+<head>
+<meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>wenzy</title>   
+ <!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css?ver=2" rel="stylesheet">   		
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<!-- 上方导航栏 -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+<div class="container">
+div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<span class="sr-only">切换导航</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="#ad-carousel" class="navbar-brand">wenzy</a>
+ </div>
+<!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+<div class="collapse navbar-collapse navbar-responsive-collapse" id="collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="#ad-carousel">主页面</a></li>
+<li><a href="#ad-carousel">个人简介</a></li>
+<li><a href="#tech-container">专业技能</a></li>
+<li><a href="#project-container">项目经历</a></li>
+<li><a href="#contact-me">与我联系</a></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- 上方导航栏结束 -->  
+<!-- 轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+<!--轮播下方点-->
+<ol class="carousel-indicators">
+<li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+<li data-target="#ad-carousel" data-slide-to="1"></li>
+<li data-target="#ad-carousel" data-slide-to="2"></li>
+<li data-target="#ad-carousel" data-slide-to="3"></li>
+</ol>
+<!-- 轮播图-->
+<div class="carousel-inner">
+<div class="item active">
+<img src="images/1.png" alt="1 slide">
+<div class="container">
+<div class="carousel-caption">
+<h2>个性</h2>
+<p>我就是我，是颜色不一样的焰火</p>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="images/2.png" alt="2 slide">
+<div class="container">
+<div class="carousel-caption">
+<h2>发现</h2>
+<p>静静寻觅，只为探求生活的美好。</p>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="images/3.png" alt="3 slide">
+<div class="container">
+<div class="carousel-caption">
+<h2>青春</h2>
+<p>生命像鲜花一样绽开，我们不能让自己枯萎。</p>
+</div>
+</div>
+</div>
+<div class="item">
+<img src="images/4.png" alt="4 slide">
+<div class="container">
+<div class="carousel-caption">
+<h2>追求</h2>
+<p>我的未来不是梦，我认真地过每一分钟。</p>
+/div>
+</div>
+</div>
 
 				
 
@@ -724,7 +605,7 @@
 
 		<div class="foot">
 
-			 Copyright © 2015 <a href="http://cuiqingcai.com">崔庆才</a> 版权所有  托管于 <a href="http://www.aliyun.com/">阿里云主机</a>  鲁ICP备14030596号
+			 Copyright © 2015 <a href="http://cuiqingcai.com">wenzy</a> 版权所有  托管于 <a href="http://www.aliyun.com/">阿里云主机</a>  鲁ICP备14030596号
 
 		</div>
 
