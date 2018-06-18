@@ -1,1 +1,24 @@
-hello
+<HTML>
+<HEAD>
+<TITLE>title</TITLE>
+</HEAD>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function chkacc(){
+	if(document.getElementById("tbxuid1").value==''){
+		alert('姓名不能为空');
+	}
+	if(document.getElementById("tbxpwd1").value==''){
+		alert('留言内容不能为空。');
+	}
+}
+//-->
+</SCRIPT>
+<BODY>
+<FORM METHOD=POST ACTION="" name="frm1">
+姓名：<INPUT TYPE="text" NAME="tbxuid" id="tbxuid1">
+留言内容：<INPUT TYPE="text" NAME="tbxpwd" id="tbxpwd1">
+<INPUT TYPE="button" value="提交" onclick="chkacc();">
+</FORM>
+</BODY>
+</HTML>
